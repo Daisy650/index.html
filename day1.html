@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY BUSINESS CARD</title>
+</head>
+<STYLE>
+     body{
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        background: #aba6a6;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height:100vh;
+        margin: 0;
+     }
+     .card{
+        display: flex;
+        align-items: center;
+        background-color: rgb(10, 174, 174);
+        padding: 20px 30px;
+        border-radius: 15px;
+        box-shadow: 0 4px 12px rgb(216, 156, 67);
+        max-width: 600px;
+        width: 100%;
+     }
+     .card img {
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        margin-right: 25px;
+        border: 3px solid wheat;
+
+     }
+     .card-content{
+        flex-1;
+     }
+        .card-content h1{
+            margin: 0;
+            font-size: 16px;
+            color: rgb(149, 15, 215);
+        }
+     .card-content h2{
+        margin: 0;
+        font-size: 15px;
+        color: rgb(77, 3, 3);
+        font-weight: normal;
+     }
+     .card-content p{
+        font-size: 14px;
+        color: #eeecec;
+        margin-bottom: 15px;
+        font-weight: 1.4;
+     }
+     .card-content ul{
+        list-style: none;
+        padding: 0;
+        margin: 0;
+     }
+     .card-content ul li{
+        display: inline-block;
+        margin-right: 12px;
+     }
+     .card-content ul li a {
+        text-decoration: none;
+        color:#34de45;
+        font-weight: bold;
+        transition: color 2s;
+     }
+     .card-content ul li a:hover{
+        color:black;
+     }
+</STYLE>
+<body>
+    <div class="card">
+        <img src="daisy.jpg" alt="profile picture">
+        <div class="card-content">
+            <h1>Daisy Kumari</h1>
+            <h2>Fronted Developer</h2>
+            <p>"I am a passionate Frontend Developer with a strong foundation in creating responsive, user-friendly, and visually appealing web applications. Skilled in HTML5, CSS3, JavaScript, and modern frameworks, I specialize in building clean interfaces and ensuring seamless user experiences across devices. With hands-on experience in API integration, Bootstrap, and Sass, I focus on writing efficient, maintainable code while staying updated with the latest UI/UX trends and technologies. My goal is to craft interactive digital solutions that merge creativity with functionality."</p>
+            <ul>
+                <li><a href="https://www.linkedin.com/public-profile/settings?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_self_edit_contact-info%3BUxZfAKBAQZGCiq0JUZcWEg%3D%3D" target="_blank">LinkedIn</a></li>
+                <li><a href="https://github.com/Daisy650">Github</a></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
