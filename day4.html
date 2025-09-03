@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Skills Array Example</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f6f9;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+    .container {
+      background: white;
+      padding: 20px 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      width: 300px;
+      text-align: center;
+    }
+    h2 {
+      color: #333;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+    li {
+      background: #007bff;
+      color: white;
+      margin: 8px 0;
+      padding: 10px;
+      border-radius: 6px;
+      transition: 0.3s;
+    }
+    li:hover {
+      background: #0056b3;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h2>My Skills</h2>
+    <ul id="skillsList"></ul>
+  </div>
+
+  <script>
+    // Step 1: Define array of skill objects
+    const skills = [
+      { name: "HTML", proficiency: "Intermediate" },
+      { name: "CSS", proficiency: "Beginner" },
+      { name: "JavaScript", proficiency: "Advanced" }
+    ];
+
+    // Step 2: Transform with .map()
+    function formatSkills(skillArray) {
+      return skillArray.map(skill => ${skill.name} (${skill.proficiency}));
+    }
+
+    // Step 3: Display in HTML
+    const formattedSkills = formatSkills(skills);
+    const skillsList = document.getElementById("skillsList");
+
+    formattedSkills.forEach(skill => {
+      const li = document.createElement("li");
+      li.textContent = skill;
+      skillsList.appendChild(li);
+    });
+
+    // Also log in console
+    console.log(formattedSkills);
+  </script>
+
+</body>
+</html>
